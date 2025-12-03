@@ -5,6 +5,7 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/wastingnotime/game-hub/domain"
+	"github.com/wastingnotime/game-hub/memory"
 
 	"net/http"
 	"time"
@@ -27,8 +28,8 @@ func StartDuelHandler(w http.ResponseWriter, r *http.Request) {
 		CreatedAt: time.Now().UTC(),
 	}
 
-	// TODO: Save challenge (in-memory, Redis, or DB)
-	// For now, just return it
+	memory.WaitingChallenges = append(memory.WaitingChallenges, challenge)
+
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(challenge)
 }
