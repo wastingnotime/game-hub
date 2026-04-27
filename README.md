@@ -2,6 +2,27 @@
 
 Game Hub — a platform designed to host multiple simple games under one structure
 
+## Status: Dormant / Paused
+
+GameHub explored state, matchmaking, timing, and interaction patterns through the Trivia Duel concept.
+The project is paused because its feedback loop is too slow and open-ended for the current phase.
+It is preserved as a learning artifact, not deleted.
+
+## What this project explored
+
+- matchmaking
+- duel lifecycle
+- state coordination
+- interaction timing
+- simple game backend architecture
+
+## Why it is paused
+
+- no bounded finish line
+- slow feedback loop
+- not aligned with current execution energy
+- preserved for future reference
+
 ## about the project 
 
 It a slow walkthrough to build a game platform that can be found at:
